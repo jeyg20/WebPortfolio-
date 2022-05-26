@@ -1,32 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;1,600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-
 }
-
+html {
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+    color: #d3d3d3;
+}
 body {
     height: 100vh;
-    width: 100vw
+    max-width: 100vw;
+    padding: 0 10vw;
     background: rgb(12,17,27);
     background: linear-gradient(0deg, rgba(12,17,27,1) 0%, rgba(14,31,62,1) 100%);  
 }
 .nav-bar{
-    background-color: rgb(212, 212, 212, 0.1);
-    text-align: right;
-    
+    height: 50px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
-.nav-bar-list li {
+.nav-bar-items li {
     display: inline-block;
-    margin: 10px 20px;
+    padding-right: 35px;
+    height: 100%;
 }
-.nav-bar-list li a {
-    display: block;
+.nav-bar-items a {
     text-decoration: none;
-    color: white;
+    color: #ffffff;
     font-weight: normal;
-    font-size: 26px;
+    font-size: 2.5rem;
+}
+.nav-bar-items a:hover {
+    color: #d3d3d3;
+}
+.welcome-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100vw;
+    margin-top: 20vh;
+}
+.welcome-typography {
+    order: 1;
+    color: #c9cace;
+}
+.welcome-title {
+    font-size: 10rem;
+    width: fit-content;
+    font-family: 'Merriweather', serif;
+}
+
+.welcome-paragraph {
+    margin-top: 10px;
+    font-size: 7rem;
+    width: fit-content;
+    font-family: 'Merriweather', serif;
+}
+.welcome-img {
+    order: 2;
 }
