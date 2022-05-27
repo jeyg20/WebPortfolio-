@@ -1,5 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;1,600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap');
+:root {
+    /* CSS HEX */
+--jazzberry-jam: #9e0059;
+--rich-black-fogra-29: #0c1821;
+--oxford-blue: #1b2a41;
+--charcoal: #324a5f;
+--honey-yellow: #ffb100ff;
+--font: #d3d3d3;
+--dark-font: #7e7e7e;
+
+/* CSS HSL */
+--jazzberry-jam: hsla(326, 100%, 31%, 1);
+--rich-black-fogra-29: hsla(206, 47%, 9%, 1);
+--oxford-blue: hsla(216, 41%, 18%, 1);
+--charcoal: hsla(208, 31%, 28%, 1);
+--honey-yellow: hsla(42, 100%, 50%, 1);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -7,15 +23,17 @@
 }
 html {
     font-size: 62.5%;
-    font-family: 'Montserrat', sans-serif;
-    color: #d3d3d3;
+    font-family: 'Source Code Pro', monospace;
 }
 body {
     height: 100vh;
-    max-width: 100vw;
-    padding: 0 10vw;
-    background: rgb(12,17,27);
-    background: linear-gradient(0deg, rgba(12,17,27,1) 0%, rgba(14,31,62,1) 100%);  
+    
+    background: var(--rich-black-fogra-29);
+    background: linear-gradient(0deg, var(--rich-black-fogra-29) 0%, var(--oxford-blue) 100%);  
+}
+main {
+    margin: 0 auto;
+    max-width: 1200px;
 }
 .nav-bar{
     height: 50px;
@@ -31,37 +49,41 @@ body {
 }
 .nav-bar-items a {
     text-decoration: none;
-    color: #ffffff;
+    color: var(--font);
     font-weight: normal;
     font-size: 2.5rem;
 }
 .nav-bar-items a:hover {
-    color: #d3d3d3;
+    color: var(--dark-font);
 }
 .welcome-section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     max-width: 100vw;
-    margin-top: 20vh;
+    margin-top: 5vh;
+}
+.greater-than {
+    font-size: 50rem;
+    color: var(--honey-yellow);
+    order: 1;
 }
 .welcome-typography {
-    order: 1;
-    color: #c9cace;
+    order: 2;
+    color: var(--font);
+    text-align: center;
 }
 .welcome-title {
-    font-size: 10rem;
-    width: fit-content;
-    font-family: 'Merriweather', serif;
+    font-size: 8rem;
+    font-family: 'Source Code Pro', monospace;
 }
-
 .welcome-paragraph {
-    margin-top: 10px;
-    font-size: 7rem;
-    width: fit-content;
-    font-family: 'Merriweather', serif;
+    font-size: 5rem;
+    font-family: 'Source Code Pro', monospace;
 }
-.welcome-img {
-    order: 2;
+.less-than {
+    font-size: 50rem;
+    color: var(--honey-yellow);
+    order: 3;
 }
