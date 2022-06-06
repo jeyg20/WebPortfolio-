@@ -1,4 +1,4 @@
-# WebPortfolio-
+# WebPortfolio
 This is my personal web portfolio
 
-currently and migrating the project to react.js
+Currently I am migrating the project to react.js
